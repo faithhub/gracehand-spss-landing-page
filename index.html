@@ -28,6 +28,16 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if ($.cookie('pop') == null) {
+                $("#staticBackdrop").modal('show');
+                $.cookie('pop', '1');
+            }
+        });
+    </script>
     <script>
         $(document).ready(function() {
             <!-- $("#staticBackdrop").modal('show'); -->
@@ -354,8 +364,11 @@
                 </div>
 
                 <div class="row">
-                    <h2 class="mb-2"><b>Training date: 20th August - 31st August </b></h2>
                     <div class="col-lg-12 mt-2">
+                        <h2 class="mb-2"><b>Access the beginners course lecture note for free here</b></h2>
+                        <a href="assets/pdf/QUANTITATIVE ANALYSIS WITH SPSS NOTE (BEGINNERS CLASS).pdf" download="" class="get-started-btn scrollto rounded-pill p-3">Download</a>
+                    </div>
+                    <!-- <div class="col-lg-12 mt-2">
                         <h5><strong>Note:</strong></h5>
                         <ul>
                             <li>
@@ -366,6 +379,72 @@
                                 <h5><strong>Weekends (Fri - sun): Lectures</strong></h5>
                             </li>
                         </ul>
+                    </div>
+                </div> -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======= Features Section ======= -->
+        <section id="course" class="pricing">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-uppercase">The Training Package</h2>
+                </div>
+
+                <div class="row">
+                    <h2 class="mb-2"><b>Training date: 20th August - 31st August </b></h2>
+                    <div class="col-lg-6 mt-2">
+                        <h3><strong>1st weekend (20th - 22th) 3 Days</strong></h3>
+                        <ul>
+                            <li>
+                                <p><strong>20th -  starting beginners training </strong></p>
+                            </li>
+                            <li>
+                                <p><strong>21st - ending of beginners training</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>22nd - Starting intermediate training</strong></p>
+                            </li>
+                        </ul>
+                        <h6>3 HOURS+ PRACTICAL VIDEO ATTACHED</h6>
+                    </div>
+                    <div class="col-lg-6 mt-2">
+                        <h3><strong>2nd weekend (27th - 31st) 5 Days</strong></h3>
+                        <ul>
+                            <li>
+                                <p><strong>27th - Ending intermediate training</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>28th - Starting advance training</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>29th - Ending advance training</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>Writing of abstract</strong></p>
+                            </li>
+                            <li>
+                                <p><strong>How to publish articles</strong></p>
+                            </li>
+                        </ul>
+                        <h6>6 HOURS+ PRACTICAL VIDEOS </h6>
+                        <h6>30 - 31st - Marketing of the skill and questions and Answers</h6>
+                        <h6>CERTIFICATE WILL BE GIVEN TWO WEEKS AFTER THE END OF THE TRAINING</h6>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <h2><strong>The Beginner Level Course</strong></h2>
+                        <img src="./assets/img/gh-7.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mt-2"><strong>The Advance Level Course</strong></h2>
+                        <img src="./assets/img/gh-6.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3">
+                        <iframe style="width:100%; height:400px;" src="https://www.youtube.com/embed/DuQECX4XvP4"></iframe>
                     </div>
                 </div>
             </div>
@@ -385,9 +464,9 @@
                 </div>
 
                 <div class="row content">
-                    <div class="col-lg-6  order-2 order-lg-1">
+                    <!-- <div class="col-lg-6  order-2 order-lg-1">
                         <img src="./assets/img/gh-3.jpg" class="img-fluid">
-                    </div>
+                    </div> -->
                     <div class="col-lg-6">
                         <h3><strong>Training Cost</strong></h3>
                         <p>50% discount available till the end of the registration</p>
@@ -402,7 +481,7 @@
                             </li>
                         </ul>
 
-                        <p><i><b>Note : Registration closses on August 19th at exactly 7:00pm.
+                        <p><i><b>Note : Registration closes on August 19th, training start August 20th, 8pm
                                     <br>Training start by 8:00pm</b></i></p>
                         <!-- <p><i><b>Note : Early bird registration ends on July 16th, 11:59pm.
                                     <br>Late registration begins on 11th of July, 12:00am</b></i></p> -->
@@ -425,7 +504,7 @@
         <section id="course" class="pricing2">
             <div class="container">
                 <div class="section-title">
-                    <h2 class="text-uppercase">The Upcoming Training</h2>
+                    <h2 class="text-uppercase">Our Next Upcoming Training</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-6  order-2 order-lg-1">
@@ -438,7 +517,7 @@
 
                 <div class="col-lg-6 offset-lg-3 text-center mt-4">
                     <div class="text-center">
-                        <a href="http://research.gracehandsresearchinstitute.com/" class="get-started-btn scrollto rounded-pill p-3" target="blank" type="submit" style="font-weight:bolder">Learn More...</a>
+                        <a href="https://forms.gle/Kk1aD1QGzUBbAWbn9" class="get-started-btn scrollto rounded-pill p-3" target="blank" style="font-weight:bolder">To Learn More...</a>
                     </div>
                 </div>
             </div>
